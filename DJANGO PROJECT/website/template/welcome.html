@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Welcome Page</title>
+        <style>
+            body{
+                background-color: black;
+                color: blue;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <center><h1>Welcome :-)</h1></center>
+        {% for d in data %}
+        <li>Fisrt Name : {{ d.0 }}</li>
+        <li>Last Name : {{ d.1 }}</li>
+        <li>Sex : {{ d.2 }}</li>
+        <li>Email : {{ d.3 }}</li>
+        <li>Password : {{ d.4 }}</li>
+        {% endfor %}
+    </body>
+</html>
